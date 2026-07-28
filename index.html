@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullahi Adan Hamud — Software Engineering Student</title>
+<meta name="description" content="Portfolio of Abdullahi Adan Hamud, Software Engineering student at Daffodil International University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background blueprint grid -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="tabbar" id="tabbar">
+  <div class="tabbar__inner">
+    <div class="tabbar__brand">
+      <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+      <span class="brand__path">~/abdullahi-portfolio</span>
+    </div>
+
+    <nav class="tabbar__tabs" id="navTabs">
+      <a href="#home" class="tab is-active" data-tab>home.js</a>
+      <a href="#about" class="tab" data-tab>about.js</a>
+      <a href="#skills" class="tab" data-tab>skills.js</a>
+      <a href="#education" class="tab" data-tab>education.js</a>
+      <a href="#projects" class="tab" data-tab>projects.js</a>
+      <a href="#contact" class="tab" data-tab>contact.js</a>
+    </nav>
+
+    <button class="tabbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">// software engineering student</p>
+        <h1 class="hero__title">Building things,<br><span class="accent">one commit</span> at a time.</h1>
+        <p class="hero__sub">I'm Abdullahi Adan Hamud — I design and build web applications while studying Software Engineering at Daffodil International University.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Terminal window showing a whoami command output">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="terminal__title">bash — whoami</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="prompt">guest@portfolio</span>:<span class="path">~</span>$ <span id="typedCmd"></span><span class="cursor" id="typeCursor">&nbsp;</span></p>
+          <div class="terminal__output" id="terminalOutput" hidden>
+            <p><span class="key">name</span>: Abdullahi Adan Hamud</p>
+            <p><span class="key">role</span>: Software Engineering Student</p>
+            <p><span class="key">university</span>: Daffodil International University</p>
+            <p><span class="key">department</span>: Software Engineering</p>
+            <p><span class="key">status</span>: <span class="status-dot"></span> open to opportunities</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section"><span></span></a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <p class="section__eyebrow">01 — about.js</p>
+    <div class="about">
+      <div class="about__text reveal">
+        <h2 class="section__title">About me</h2>
+        <p>I am a Software Engineering student at Daffodil International University. I'm interested in web development, programming, and software engineering, and I enjoy learning new technologies and improving my practical skills through projects and assignments.</p>
+        <p>I like turning ideas into working software — from small scripts to full applications — and I'm always looking for the next thing to build and break and fix again.</p>
+      </div>
+      <aside class="spec-card reveal">
+        <div class="spec-card__row"><span>Focus</span><strong>Web Development</strong></div>
+        <div class="spec-card__row"><span>Program</span><strong>B.Sc. Software Engineering</strong></div>
+        <div class="spec-card__row"><span>University</span><strong>Daffodil International University</strong></div>
+        <div class="spec-card__row"><span>Based in</span><strong>Bangladesh</strong></div>
+        <div class="spec-card__row"><span>Availability</span><strong>Open to internships</strong></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <p class="section__eyebrow">02 — skills.js</p>
+    <h2 class="section__title reveal">Skills &amp; tools</h2>
+    <div class="skills-bars reveal">
+
+      <div class="skill-bar" data-percent="90">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">HTML</span>
+          <span class="skill-bar__value">90%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="85">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">CSS</span>
+          <span class="skill-bar__value">85%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="80">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">JavaScript</span>
+          <span class="skill-bar__value">80%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="70">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">C</span>
+          <span class="skill-bar__value">70%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="65">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">Java</span>
+          <span class="skill-bar__value">65%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="75">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">Python</span>
+          <span class="skill-bar__value">75%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="80">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">Git &amp; GitHub</span>
+          <span class="skill-bar__value">80%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+      <div class="skill-bar" data-percent="85">
+        <div class="skill-bar__head">
+          <span class="skill-bar__label">Web Development</span>
+          <span class="skill-bar__value">85%</span>
+        </div>
+        <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+      </div>
+
+    </div>
+    <p class="skills-note">// levels are a self-assessment, updated as I learn</p>
+  </section>
+
+  <!-- ===== EDUCATION (git-log style) ===== -->
+  <section class="section" id="education">
+    <p class="section__eyebrow">03 — education.js</p>
+    <h2 class="section__title reveal">Education log</h2>
+    <p class="section__sub reveal">$ git log --education --oldest-first</p>
+
+    <ol class="commit-log">
+      <li class="commit reveal">
+        <div class="commit__node"></div>
+        <div class="commit__body">
+          <p class="commit__hash">commit a1c3f9e</p>
+          <h3 class="commit__title">Primary School Certificate</h3>
+          <p class="commit__meta">S.Y.L Primary School</p>
+        </div>
+      </li>
+      <li class="commit reveal">
+        <div class="commit__node"></div>
+        <div class="commit__body">
+          <p class="commit__hash">commit b7d2e41</p>
+          <h3 class="commit__title">High School Certificate</h3>
+          <p class="commit__meta">S.Y.L High School</p>
+        </div>
+      </li>
+      <li class="commit commit--head reveal">
+        <div class="commit__node"></div>
+        <div class="commit__body">
+          <p class="commit__hash">commit c94af02 <span class="head-tag">HEAD</span></p>
+          <h3 class="commit__title">B.Sc. in Software Engineering</h3>
+          <p class="commit__meta">Daffodil International University — Dept. of Software Engineering</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <p class="section__eyebrow">04 — projects.js</p>
+    <h2 class="section__title reveal">Projects</h2>
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="project-card__file">hotel-management.sys</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Hotel Management System</h3>
+          <p class="comment">// Manages bookings, rooms, and guest records for a hotel.</p>
+          <div class="tag-row">
+            <span class="tag">System Design</span>
+            <span class="tag">CRUD</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="project-card__file">ecommerce-app.web</span>
+        </div>
+        <div class="project-card__body">
+          <h3>E-commerce / Web Application</h3>
+          <p class="comment">// A web application for browsing and purchasing products online.</p>
+          <div class="tag-row">
+            <span class="tag">Web App</span>
+            <span class="tag">Frontend</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="project-card__file">student-management.sys</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Student Management System</h3>
+          <p class="comment">// Tracks student records, courses, and academic data.</p>
+          <div class="tag-row">
+            <span class="tag">System Design</span>
+            <span class="tag">Database</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <p class="section__eyebrow">05 — contact.js</p>
+    <h2 class="section__title reveal">Get in touch</h2>
+
+    <div class="contact">
+      <div class="contact__info reveal">
+        <p class="contact__lead">Have an opportunity, a project, or just want to say hi? Send a message — I read every one.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list__label">Email</span>
+            <a href="mailto:abdullahikaazi39@gmail.com" class="contact-list__value">abdullahikaazi39@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-list__label">Phone</span>
+            <a href="tel:+8801305953503" class="contact-list__value">01305953503</a>
+          </li>
+        </ul>
+
+        <div class="social-row">
+          <a href="https://github.com/abdullahiadan750-lgtm" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/abdullahi-adan-a21269425" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.facebook.com/share/1EzoH6f4iK/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.86c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.78 8.44-4.94 8.44-9.94Z"/></svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required>
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          <span class="form-error" id="subjectError"></span>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+          <span id="submitLabel">Send message</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&gt; built by Abdullahi Adan Hamud — <span id="footerYear"></span></p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑ top</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
